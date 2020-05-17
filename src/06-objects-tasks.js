@@ -20,13 +20,15 @@
  *    console.log(r.height);      // => 20
  *    console.log(r.getArea());   // => 200
  */
-const Rectangle = (width, height) => ({
-  width,
-  height,
-  getArea() {
-    return this.width * this.height;
-  },
-});
+function Rectangle(width, height) {
+  return {
+    width,
+    height,
+    getArea() {
+      return this.width * this.height;
+    },
+  };
+}
 
 
 /**
